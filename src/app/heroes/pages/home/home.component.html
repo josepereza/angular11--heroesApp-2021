@@ -1,0 +1,50 @@
+<mat-drawer-container fullscreeen>
+    <mat-toolbar color="primary" class="example-toolbar">
+        <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+        <span class="example-spacer"></span>
+        <h1 class="example-app-name">Responsive App</h1>
+        <div class="spacer"></div>
+        <button mat-button color="accent">
+          Logout
+        </button>
+      </mat-toolbar>
+    
+      <mat-sidenav-container style="height:100vh;" class="example-sidenav-container"
+                            >
+        <mat-sidenav  #snav mode="side"  >
+         
+         <mat-nav-list>
+          
+          <mat-list-item >
+            <span mat-list-icon>
+              <mat-icon>list</mat-icon>
+           </span>
+             <a  routerLink="./listado">Listados</a>
+              
+          </mat-list-item>
+          <mat-list-item >
+            <span mat-list-icon>
+              <mat-icon>add</mat-icon>
+           </span>
+             <a  routerLink="./agregar">Agregar Heroe</a>
+              
+          </mat-list-item>
+          <mat-list-item >
+            <span mat-list-icon>
+              <mat-icon>search</mat-icon>
+           </span>
+             <a  routerLink="./buscar">Buscar Heroe</a>
+              
+          </mat-list-item>
+        </mat-nav-list>
+        </mat-sidenav>
+    
+        <mat-sidenav-content>
+         <div class="container">
+          <router-outlet></router-outlet>
+         </div>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+</mat-drawer-container>
+
+
