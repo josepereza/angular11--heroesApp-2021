@@ -13,10 +13,11 @@ import { HeroesRoutingModule } from './heroes-routing.module';
 import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.component';
 import { HeroeImagenPipe } from './pipes/heroe-imagen.pipe';
 import { FormsModule } from '@angular/forms';
+import { ConfirmarComponent } from './components/confirmar/confirmar.component';
 
 
 @NgModule({
-  declarations: [AgregarComponent, BuscarComponent, HomeComponent, ListadoComponent, HeroeComponent, HeroeTarjetaComponent, HeroeImagenPipe],
+  declarations: [AgregarComponent, BuscarComponent, HomeComponent, ListadoComponent, HeroeComponent, HeroeTarjetaComponent, HeroeImagenPipe, ConfirmarComponent],
   imports: [
     CommonModule,
     HeroesRoutingModule,

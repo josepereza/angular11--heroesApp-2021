@@ -2,7 +2,7 @@
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{item.superhero}}</mat-card-title>
-      <mat-card-subtitle>{{item.alt_img}}</mat-card-subtitle>
+      
     </mat-card-header>
     <img mat-card-image [src]="item | heroeImagen"  alt="Photo of a Shiba Inu">
     <mat-card-content>
@@ -19,7 +19,7 @@
       [routerLink]="['/heroes', item.id]"
       >Ver Mas</button>
       <button mat-button color="info"
-      [routerLink]="['/editar', item.id]">
+      [routerLink]="['/heroes/editar', item.id]">
        Editar</button>
     </mat-card-actions>
   </mat-card>
